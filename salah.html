@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Barka da Sallah</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+    }
+body{
+    background-color: #002;
+}
+h1{
+   font-size: 100px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff; 
+   background: rgb(201,201,201);
+   font-weight: bolder;
+background: rgb(32,60,148);
+background: linear-gradient(90deg, rgba(32,60,148,1) 0%, rgba(34,51,143,1) 0%, rgba(58,69,136,1) 7%, rgba(112,129,175,1) 15%, rgba(225,230,238,1) 28%, rgba(226,230,235,1) 46%, rgba(239,240,242,1) 54%, rgba(229,233,244,1) 64%, rgba(176,185,207,1) 75%, rgba(107,123,163,1) 85%, rgba(118,115,180,1) 94%, rgba(108,111,163,1) 100%);
+-webkit-background-clip: text;
+   background-position: 0 0;
+   animation: back 20s linear infinite;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-size: 100% 100%;
+} 
+
+.greet{
+    color:white;
+    position: absolute;
+    left: 600px;
+   }
+   .greet p{
+    font-size: 40px;
+  font-weight: bolder;
+ background-position: 0 0;
+   animation: back 20s linear infinite;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: transparent;
+   -webkit-text-stroke: 0.2px #fff; 
+     background: rgb(32,60,148);
+background: linear-gradient(90deg, rgba(32,60,148,1) 0%, rgba(34,51,143,1) 0%, rgba(58,69,136,1) 7%, rgba(112,129,175,1) 15%, rgba(225,230,238,1) 28%, rgba(226,230,235,1) 46%, rgba(239,240,242,1) 54%, rgba(229,233,244,1) 64%, rgba(176,185,207,1) 75%, rgba(107,123,163,1) 85%, rgba(118,115,180,1) 94%, rgba(108,111,163,1) 100%);
+    -webkit-background-clip: text;
+
+   }
+   
+   .greet h4{
+    font-size: 60px;
+    background: rgb(32,60,148);
+background: linear-gradient(90deg, rgba(32,60,148,1) 0%, rgba(34,51,143,1) 0%, rgba(58,69,136,1) 7%, rgba(112,129,175,1) 15%, rgba(225,230,238,1) 28%, rgba(226,230,235,1) 46%, rgba(239,240,242,1) 54%, rgba(229,233,244,1) 64%, rgba(176,185,207,1) 75%, rgba(107,123,163,1) 85%, rgba(118,115,180,1) 94%, rgba(108,111,163,1) 100%);
+    -webkit-background-clip: text;
+font-weight: bolder;
+ background-position: 0 0;
+   animation: back 20s linear infinite;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   color: transparent;
+   -webkit-text-stroke: 0.5px #fff; 
+  
+   }
+.moon{
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 50px;
+    /* overflow: hidden; */
+    border-color: transparent;
+  }
+.innermoon{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 0 20% 20%;
+    background-color: #002;
+}
+.mosque1, .mosque3{
+    position: absolute;
+    height: 20%;
+    background-color: white;
+    top: 80%;
+ }
+.mosque1{
+    left: 0;
+    width: 25%;
+ }
+.mosque3{
+    left: 75%;
+    width: 15%;
+    bottom: 0;
+    border-bottom-right-radius: 50%;
+}
+.mosque2{
+    position: absolute;
+    height: 30%;
+    background-color: white;
+    top: 70%;
+    left: 25%;
+    width: 50%;
+    border-right:1px solid #ccc;
+    border-left:1px solid #ccc;
+    box-shadow: 2px 0 #eee,-2px 0 #eee;
+    z-index: 5;
+ }
+ .crane{
+    position: absolute;
+    height: 80%;
+    background-color: #002;
+    top: 30%;
+    left: 50%;
+    width: 40%;
+    border:3px ridge #ccc;
+    border-bottom: none;  
+    border-left: none;  
+    border-top-left-radius:0% 50%;
+    border-top-right-radius :150% 140%;
+    border-bottom-left-radius :00% 20%;
+    border-bottom-right-radius:50% 20%;
+  }
+  .crane2{
+    position: absolute;
+    height: 80%;
+    background-color: #002;
+    top:30%;
+    left: 10%;
+    width: 40%;
+    border:3px ridge #ccc;
+    border-bottom: none;  
+    border-right: none;  
+    border-top-right-radius:0% 50%;
+    border-top-left-radius :150% 140%;
+    border-bottom-right-radius :00% 20%;
+    border-bottom-left-radius:50% 20%;
+  }
+  .top1{
+    position: absolute;
+    height: 20%;
+    background-color: #002;
+    top:20%;
+    left: 45%;
+    width: 32%;
+    border-top:3px ridge #ccc;
+    border-bottom: none;  
+    border-right: none;  
+    border-top-right-radius:50%;
+    border-top-left-radius :0%;
+    border-bottom-right-radius:20%;
+    border-bottom-left-radius:20%;
+    transform: rotate(40deg);
+    z-index: 10;
+
+  }
+  .top2{
+    position: absolute;
+    height: 25%;
+    background-color: #002;
+    top:20%;
+    left: 25%;
+    width: 32%;
+    border-top:3px ridge #ccc;
+    border-bottom: none;  
+    border-right: none;  
+    border-top-left-radius:50%;
+    border-top-right-radius :0%;
+    border-bottom-left-radius:20%;
+    border-bottom-right-radius:20%;
+    transform: rotate(-30deg);
+    z-index: 10;
+
+  }
+  .top3{
+    height: 30%;
+    top:20%;
+    left: 40%;
+    width: 20%;
+    border-radius: 50%;
+    background-color:#002;
+    position: absolute;
+    z-index: 12;
+  }
+  #left-mosque{
+    height: 10%;
+    top:70%;
+    left: 10%;
+    width: 15%;
+    border: none;
+    box-shadow: none;
+  }
+  #right-mosque{
+    height: 10%;
+    top:70%;
+    left: 75%;
+    width: 15%;
+    border: none;
+    box-shadow: none;
+  }
+  .tops{
+      border: none;
+  }
+  #right-2{
+    height: 10%;
+    top:60%;
+    left: 75%;
+    width: 15%;
+    border: none;
+    box-shadow: none;
+    background-color: #002;
+
+  }
+  #left-2{
+    height: 10%;
+    top:60%;
+    left: 10%;
+    width: 15%;
+    border: none;
+    box-shadow: none;
+    background-color: #002;
+
+  }
+  .blue-top{
+      background-color: white;
+  }
+  .circles{
+    height: 5%;
+    width: 5%;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 15;
+  }
+  .circle2{
+    position: relative;
+    width: 80%;
+    height: 80%;
+   border-radius: 50%;
+    margin: 0 0 20% 20%;
+    background-color: #002;
+}
+.right-circle{
+    top:56%;
+    left: 81%;
+   
+}
+.left-circle{
+    top:56%;
+    left: 16%;
+   
+}
+.center-mosque{
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    top: 25%;
+    height: 45%;
+    z-index: 30;
+  }
+ .pole{
+    position: absolute;
+    width: 10%;
+    height: 50%;
+    top: 50%;
+ }
+ .pole1{
+    left: 0;
+ }
+  .pole2{
+    left: 90%;
+  }
+  .long{
+      position: absolute;
+      height: 60%;
+      width: 100%;
+      top: 40%;
+      border: 1px solid #ccc;
+      background-color: white;
+      box-shadow: 1px 1px 1px #ccc,-1px -1px 1px #ccc;
+  }
+  .short{
+    position: absolute;
+      height: 5%;
+      width: 116%;
+      left: -8%;
+      top: 35%;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 10px;
+  }
+  .pole-circle1{
+    position: absolute;
+    height: 7%;
+      width: 60%;
+      left: 20%;
+      top: 29%;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius: 50%;
+  }
+  .pole-circle2{
+    position: absolute;
+    height: 17%;
+      width: 100%;
+      left: 0%;
+      top: 12%;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius:50%;
+  }
+    .pole-circle3{
+    position: absolute;
+    height: 12%;
+      width: 30%;
+      left: 35%;
+      top: 0%;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius:50%;
+  }
+  .rect1{
+    position: absolute;
+    height: 12%;
+      width: 100%;
+      left: 0%;
+      top: 88%;
+      background-color: white;
+   }
+   .mos{
+       height: 60%;
+       width: 12%;
+       top:40%;
+       position: absolute;
+   }
+   .mos1{
+    left: 3%;
+     
+   }
+   .mos2{
+      left: 18%;
+   }
+    .mos3{
+      left: 35%;
+   }
+   .mos4{
+      left: 51%;
+   }
+   .mos5{
+      left: 68%;
+   }
+   .mos6{
+      left: 85%;
+   }
+   .rect2{
+    position: absolute;
+    height: 12%;
+      width: 80%;
+      left: 10%;
+      top: 76%;
+      background-color: white;
+   } 
+   .rect3{
+    position: absolute;
+    height: 12%;
+      width: 60%;
+      left: 20%;
+      top: 64%;
+      background-color: white;
+   }
+   .rect4{
+    position: absolute;
+    height: 3%;
+      width: 64%;
+      left: 18%;
+      top: 61%;
+      border: 1px solid #ccc;
+      background-color: white;
+      border-radius:10%;
+ }
+ .rect5{
+    position: absolute;
+    height: 40%;
+      width: 80%;
+      left: 10%;
+      top: 19%;
+    }
+    #top-mosque{
+        position: absolute;
+    height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+    .rect6{
+        position: absolute;
+    height: 20%;
+      width:  6%;
+      left: 48.5%;
+      top: 12%;
+    }
+    .rect7{
+        position: absolute;
+    height: 12%;
+      width:  16%;
+      left: 47%;
+      top: 0%;
+      background-color: white;
+      border-radius: 50%;
+   }
+   .circle7{
+        position: absolute;
+    height: 80%;
+      width:  80%;
+      left: 20%;
+      top: 0%;
+      background-color: #002;
+      border-radius: 50%;
+   }
+   
+</style>
+<body>
+    <div class="container">
+        <div class="greet">
+            <h1>Barka <br> da <br> Sallah</h1>
+            <p>May the blessings of Allah keep your heart and home happy and joyous.</p>
+            <h4>Eid Mubarrak!</h4>
+        </div>
+        <div class="moon">
+            <div class="innermoon">
+                    <div class="mosque1"></div>
+                    <div class="mosque2">
+                            <div class="top1"></div>
+                            <div class="top2"></div>
+                            <div class="top3"></div>
+                            <div class="crane"></div>
+                        <div class="crane2"></div>
+                    </div>
+                    <div class="mosque3"></div>
+                    <div class="mosque2" id="left-mosque">
+                            <div class="top1 tops"></div>
+                            <div class="top2 tops"></div>
+                            <div class="top3"></div>
+                            <div class="crane tops"></div>
+                        <div class="crane2 tops"></div>
+                    </div>
+                    <div class="mosque2" id="right-mosque">
+                            <div class="top1 tops"></div>
+                            <div class="top2 tops"></div>
+                             <div class="top3"></div>
+                            <div class="crane tops"></div>
+                        <div class="crane2 tops"></div>
+                    </div>
+                    <div class="mosque2" id="right-2">
+                            <div class="top1 tops blue-top"></div>
+                            <div class="top2 tops blue-top"></div>
+                            <div class="top3 blue-top"></div>
+                            <div class="crane tops blue-top"></div>
+                        <div class="crane2 tops blue-top"></div>
+                    </div>
+                    <div class="circles right-circle">
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="mosque2" id="left-2">
+                            <div class="top1 tops blue-top"></div>
+                            <div class="top2 tops blue-top"></div>
+                            <div class="top3 blue-top"></div>
+                            <div class="crane tops blue-top"></div>
+                        <div class="crane2 tops blue-top"></div>
+                    </div>
+                    <div class="circles left-circle">
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="center-mosque">
+                            <div class="pole pole1">
+                                    <div class="long"></div>
+                                    <div class="short"></div>
+                                    <div class="pole-circle1"></div>
+                                    <div class="pole-circle2"></div>
+                                    <div class="pole-circle3"></div>
+                                 </div>
+                                 <div class="pole pole2">
+                                        <div class="long"></div>
+                                        <div class="short"></div>
+                                        <div class="pole-circle1"></div>
+                                        <div class="pole-circle2"></div>
+                                        <div class="pole-circle3"></div>
+                                     </div>
+                                     <div class="rect1">
+                                            <div class="mos mos1">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                             <div class="mos mos2">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                             <div class="mos mos3">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                             <div class="mos mos4">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                             <div class="mos mos5">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                             <div class="mos mos6">
+                                                    <div class="top1 tops"></div>
+                                                    <div class="top2 tops"></div>
+                                                    <div class="top3"></div>
+                                                    <div class="crane tops"></div>
+                                                <div class="crane2 tops"></div>
+                                           
+                                             </div>
+                                     </div>
+                                     <div class="rect2"></div>
+                                     <div class="rect3"></div>
+                                     <div class="rect4"></div>
+                                     <div class="rect5">
+                                            <div  class="top-mosque">
+                            <div class="top1 tops blue-top"></div>
+                            <div class="top2 tops blue-top"></div>
+                            <div class="top3 blue-top"></div>
+                            <div class="crane tops blue-top"></div>
+                        <div class="crane2 tops blue-top"></div>
+                    </div>
+                   
+                                     </div>
+                                     <div class="rect6">
+                                            <div class="pole-circle1"></div>
+                                            <div class="pole-circle2"></div>
+                                            <div class="pole-circle3"></div>
+                                    </div>
+                                    <div class="rect7">
+                                            <div class="circle7">
+                                                </div>
+                                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
